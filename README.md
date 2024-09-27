@@ -1,18 +1,23 @@
-## Getting Started
+# Projeto de Estrutura de Dados - Árvore Binária de Códigos Morse
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é a implementação de uma árvore binária de códigos Morse, desenvolvido como requisito da disciplina de Estrutura de Dados da PUCPR.
 
-## Folder Structure
+## Objetivo
 
-The workspace contains two folders by default, where:
+O objetivo deste projeto é criar uma estrutura de dados para a codificação e decodificação de mensagens em código Morse, utilizando uma árvore binária.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Funcionalidades
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Inserção de códigos Morse na árvore binária.
+- Busca de caracteres equivalentes pelo seu código Morse.
+- Decodificação de mensagens em código Morse.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Estrutura do Projeto
 
-## Dependency Management
+- `src/`: Contém os arquivos de código-fonte.
+- `README.md`: Este arquivo, com informações sobre o projeto.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Contribuidores
+
+- Fernando Moro
+- Nicolas Jackel
