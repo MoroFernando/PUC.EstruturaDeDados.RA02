@@ -10,6 +10,29 @@ public class ArvoreBinariaMorse {
     this.insere(".-", "A");
     this.insere("-...", "B");
     this.insere("-.-.", "C");
+    this.insere("-..", "D");
+    this.insere(".", "E");
+    this.insere("..-.", "F");
+    this.insere("--.", "G");
+    this.insere("....", "H");
+    this.insere("..", "I");
+    this.insere(".---", "J");
+    this.insere("-.-", "K");
+    this.insere(".-..", "L");
+    this.insere("--", "M");
+    this.insere("-.", "N");
+    this.insere("---", "O");
+    this.insere(".--.", "P");
+    this.insere("--.-", "Q");
+    this.insere(".-.", "R");
+    this.insere("...", "S");
+    this.insere("-", "T");
+    this.insere("..-", "U");
+    this.insere("...-", "V");
+    this.insere(".--", "W");
+    this.insere("-..-", "X");
+    this.insere("-.--", "Y");
+    this.insere("--..", "Z");
   }
 
   public void insere(String morse, String letra){
