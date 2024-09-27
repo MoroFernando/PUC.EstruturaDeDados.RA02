@@ -38,6 +38,12 @@ public class ArvoreBinariaMorse {
   public void insere(String morse, String letra){
     No atual = this.raiz;
 
+    if (letra.length() != 1) {
+      System.out.println("");
+      System.out.println("A letra deve ter apenas um caracter!");
+      System.out.println("");
+      return;
+    }
 
     for (int c = 0; c < morse.length(); c++) {
       char caracter = morse.charAt(c);
@@ -54,11 +60,14 @@ public class ArvoreBinariaMorse {
         }
         atual = atual.getDireita();
       } else {
-        System.out.println("Caractere inválido: " + c);
+        System.out.println("");
+        System.out.println("Caractere inválido: " + caracter);
         return;
       }
     }
-    atual.setLetra(letra);
+    atual.setLetra(letra.toUpperCase());
+    System.out.println("");
+    System.out.println("Letra " + letra + " inserida com sucesso!");
   }
 
   public String busca(String morse) {
@@ -71,11 +80,44 @@ public class ArvoreBinariaMorse {
       } else if (caracter == '-') {
         atual = atual.getDireita();
       } else {
-        System.out.println("Caractere inválido: " + c);
+        System.out.println("");
+        System.out.println("Caractere inválido: " + caracter);
         return null;
       }
     }
     return atual.getLetra();
   }
 
+  public void imprimeTabela(){
+    System.out.println("");
+    System.out.println("##### TABELA DE CÓDIGOS MORSE #####");
+    System.out.println("A: .-");
+    System.out.println("B: -...");
+    System.out.println("C: -.-.");
+    System.out.println("D: -..");
+    System.out.println("E: .");
+    System.out.println("F: ..-.");
+    System.out.println("G: --.");
+    System.out.println("H: ....");
+    System.out.println("I: ..");
+    System.out.println("J: .---");
+    System.out.println("K: -.-");
+    System.out.println("L: .-..");
+    System.out.println("M: --");
+    System.out.println("N: -.");
+    System.out.println("O: ---");
+    System.out.println("P: .--.");
+    System.out.println("Q: --.-");
+    System.out.println("R: .-.");
+    System.out.println("S: ...");
+    System.out.println("T: -");
+    System.out.println("U: ..-");
+    System.out.println("V: ...-");
+    System.out.println("W: .--");
+    System.out.println("X: -..-");
+    System.out.println("Y: -.--");
+    System.out.println("Z: --..");
+    System.out.println("###################################");
+    System.out.println("");
+  }
 }
